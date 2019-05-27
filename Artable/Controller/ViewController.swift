@@ -1,0 +1,25 @@
+//
+//  ViewController.swift
+//  Artable
+//
+//  Created by Arman Habib on 25/5/19.
+//  Copyright © 2019 Arman Habib. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard = UIStoryboard(name: "LoginStoryBoard", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "navigationID")
+        present(controller, animated: true, completion: nil)
+    }
+
+}
+
