@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		733719EAB8DA3028961A1479 /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB741B16D945D90BEF39CAF /* Pods_ArtableAdmin.framework */; };
+		C205F743229D0A7B007A0519 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205F742229D0A7B007A0519 /* Constant.swift */; };
+		C205F746229D0E78007A0519 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C205F745229D0E78007A0519 /* RoundedViews.swift */; };
 		C21F33D42298F43A00186C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F33D32298F43A00186C17 /* AppDelegate.swift */; };
 		C21F33D62298F43A00186C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21F33D52298F43A00186C17 /* ViewController.swift */; };
 		C21F33D92298F43A00186C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21F33D72298F43A00186C17 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		6C246922047E4E4E78DB658A /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		802F76026DAD5055D72CE7FA /* Pods-ArtableAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 		9B189568D0382897DAAA5B8B /* Pods_Artable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C205F742229D0A7B007A0519 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C205F745229D0E78007A0519 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		C21F33D02298F43A00186C17 /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21F33D32298F43A00186C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C21F33D52298F43A00186C17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C205F744229D0E58007A0519 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C205F745229D0E78007A0519 /* RoundedViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C21F33C72298F43A00186C17 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		C21F33E52298F44600186C17 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				C205F744229D0E58007A0519 /* View */,
 				C28825CA229BF2D50081551C /* Utils */,
 				C21F33DA2298F43C00186C17 /* Assets.xcassets */,
 			);
@@ -146,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C28825CB229BF2F00081551C /* File.swift */,
+				C205F742229D0A7B007A0519 /* Constant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -428,7 +442,9 @@
 				C21F33D62298F43A00186C17 /* ViewController.swift in Sources */,
 				C2B0AF8B229ACD7B001412FD /* RegisterVC.swift in Sources */,
 				C21F33D42298F43A00186C17 /* AppDelegate.swift in Sources */,
+				C205F746229D0E78007A0519 /* RoundedViews.swift in Sources */,
 				C2B0AF89229ACD69001412FD /* LoginStoryboardVC.swift in Sources */,
+				C205F743229D0A7B007A0519 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

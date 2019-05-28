@@ -21,38 +21,32 @@ class RegisterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         passwordTxt.addTarget(self, action: #selector(textFiledDIdChange(didChange:)), for: UIControl.Event.editingChanged)
         confirmPassTxt.addTarget(self, action: #selector(textFiledDIdChange(didChange:)), for: UIControl.Event.editingChanged)
     }
     
     @objc func textFiledDIdChange(didChange: UITextField) {
-        guard let passTxt = passwordTxt.text else { return }
         if didChange == confirmPassTxt {
             passwordImage.isHidden = false
             confirmPassImage.isHidden = false
         } else {
-            if passTxt.isEmpty {
                 passwordImage.isHidden = true
                 confirmPassImage.isHidden = true
                 confirmPassTxt.text = ""
-            }
         }
-        
         if passwordTxt.text == confirmPassTxt.text {
-            passwordImage.image = UIImage(named: "green_check")
-            confirmPassImage.image = UIImage(named: "green_check")
+            passwordImage.image = UIImage(named: AppImage.Green)
+            confirmPassImage.image = UIImage(named: AppImage.Green)
         } else {
-            passwordImage.image = UIImage(named: "red_check")
-            confirmPassImage.image = UIImage(named: "red_check")
+            passwordImage.image = UIImage(named: AppImage.Red)
+            confirmPassImage.image = UIImage(named: AppImage.Red)
         }
-        
     }
    
     @IBAction func registerAction(_ sender: Any) {
-        guard let email = emailTxt.text , email.isNotEmpty ,
-            let username = userNameTxt.text, username.isNotEmpty,
-            let password = passwordTxt.text, password.isNotEmpty else { return }
+        guard let email = emailTxt.text , !email.isEmpty ,
+            let username = userNameTxt.text, !username.isEmpty,
+            let password = passwordTxt.text, !password.isEmpty else { return }
         
         activityIndicatorForRegister.startAnimating()
         
